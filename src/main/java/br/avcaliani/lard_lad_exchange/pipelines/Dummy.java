@@ -1,8 +1,8 @@
-package br.avcaliani.hello_flink.pipelines;
+package br.avcaliani.lard_lad_exchange.pipelines;
 
-import br.avcaliani.hello_flink.cli.Args;
-import br.avcaliani.hello_flink.models.in.User;
-import br.avcaliani.hello_flink.models.out.DTOUser;
+import br.avcaliani.lard_lad_exchange.cli.Args;
+import br.avcaliani.lard_lad_exchange.models.in.User;
+import br.avcaliani.lard_lad_exchange.models.out.DTOUser;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
@@ -35,7 +35,7 @@ public class Dummy extends Pipeline {
             return dto;
         })
         .print();
-        env.execute("hello-flink--dummy");
+        env.execute("lard-lad-exchange--dummy");
         return this;
     }
 

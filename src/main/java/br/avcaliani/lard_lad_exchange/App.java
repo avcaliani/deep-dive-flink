@@ -1,8 +1,8 @@
-package br.avcaliani.hello_flink;
+package br.avcaliani.lard_lad_exchange;
 
-import br.avcaliani.hello_flink.cli.ArgParser;
-import br.avcaliani.hello_flink.pipelines.Dummy;
-import br.avcaliani.hello_flink.pipelines.ValidateTransactions;
+import br.avcaliani.lard_lad_exchange.cli.ArgParser;
+import br.avcaliani.lard_lad_exchange.pipelines.Dummy;
+import br.avcaliani.lard_lad_exchange.pipelines.ValidateTransactions;
 
 public class App {
 

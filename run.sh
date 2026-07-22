@@ -1,13 +1,13 @@
 #!/bin/bash -e
 
-JAR_FILE="hello-flink-1.0.0-uber.jar"
+JAR_FILE="lard-lad-exchange-1.0.0-uber.jar"
 CHECKPOINT_PATH="data/flink/checkpoint/"
 
 bold() {
   printf "\e[1m%s\e[m" "$1"
 }
 
-# Jar file will be at "build/libs/hello-flink-*-uber.jar"
+# Jar file will be at "build/libs/lard-lad-exchange-*-uber.jar"
 build_jar() {
   ./gradlew uberJar
 }
@@ -20,7 +20,7 @@ function create_checkpoint_path() {
 }
 
 printf "+------------------------------------------+\n"
-printf "| 🐿 %s                       |\n" "$(bold "Hello Flink App")"
+printf "| 🍩 %s                     |\n" "$(bold "Lard Lad Exchange")"
 printf "| Kafka UI        ➜ http://localhost:8080  |\n"
 printf "| Flink Dashboard ➜ http://localhost:8081  |\n"
 printf "+------------------------------------------+\n\n"

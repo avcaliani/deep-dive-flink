@@ -1,6 +1,6 @@
-package br.avcaliani.hello_flink.pipelines;
+package br.avcaliani.lard_lad_exchange.pipelines;
 
-import br.avcaliani.hello_flink.cli.Args;
+import br.avcaliani.lard_lad_exchange.cli.Args;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

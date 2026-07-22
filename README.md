@@ -1,12 +1,15 @@
 <img src="https://flink.apache.org/img/logo/png/100/flink_squirrel_100_color.png" align="right" height="64px"/>
 
-# Hello Flink 👋
+# Lard Lad Exchange 🍩
 
-![License](https://img.shields.io/github/license/avcaliani/hello-flink?logo=apache&color=lightseagreen)
-![#](https://img.shields.io/badge/java-17-blue.svg)
-![#](https://img.shields.io/badge/apache--flink-2.0.x-ff4757.svg)
+![License](https://img.shields.io/github/license/avcaliani/deep-dive-flink?logo=apache&color=lightseagreen)
+![Java](https://img.shields.io/badge/Java-17-FF7800?logo=openjdk&logoColor=white)
+![Apache Flink](https://img.shields.io/badge/apache--flink-2.0.x-ff4757.svg)
 
 My repository with [Apache Flink](https://flink.apache.org) learnings.
+
+Lard Lad Donuts, Springfield's giant-donut landmark from *The Simpsons*.
+fitting, since this pipeline's whole job is moving (fictional) DonutCoin around.
 
 ### Quick Start
 

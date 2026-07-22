@@ -1,11 +1,11 @@
-package br.avcaliani.hello_flink.pipelines;
+package br.avcaliani.lard_lad_exchange.pipelines;
 
-import br.avcaliani.hello_flink.cli.Args;
-import br.avcaliani.hello_flink.infra.CSV;
-import br.avcaliani.hello_flink.infra.Kafka;
-import br.avcaliani.hello_flink.models.in.Transaction;
-import br.avcaliani.hello_flink.models.in.User;
-import br.avcaliani.hello_flink.models.out.DTOTransaction;
+import br.avcaliani.lard_lad_exchange.cli.Args;
+import br.avcaliani.lard_lad_exchange.infra.CSV;
+import br.avcaliani.lard_lad_exchange.infra.Kafka;
+import br.avcaliani.lard_lad_exchange.models.in.Transaction;
+import br.avcaliani.lard_lad_exchange.models.in.User;
+import br.avcaliani.lard_lad_exchange.models.out.DTOTransaction;
 import org.apache.flink.api.common.state.MapStateDescriptor;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.functions.co.BroadcastProcessFunction;
@@ -35,7 +35,7 @@ public class ValidateTransactions extends Pipeline {
 
         var transactions = kafka.read(
                 "DONU_TRANSACTIONS_V1", /* Topic */
-                "hello-flink--validate-txn-pipeline", /* Group ID */
+                "lard-lad-exchange--validate-txn-pipeline", /* Group ID */
                 Transaction.class
         );
 
@@ -53,7 +53,7 @@ public class ValidateTransactions extends Pipeline {
         );
         richTxn.filter(DTOTransaction::isInvalid).sinkTo(deadLetterSink);
 
-        env.execute("hello-flink--validate-transactions");
+        env.execute("lard-lad-exchange--validate-transactions");
         return this;
     }
 

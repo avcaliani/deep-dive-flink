@@ -1,4 +1,4 @@
-package br.avcaliani.hello_flink.models.in;
+package br.avcaliani.lard_lad_exchange.models.in;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;

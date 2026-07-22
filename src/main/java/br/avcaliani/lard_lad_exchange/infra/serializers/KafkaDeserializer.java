@@ -1,4 +1,4 @@
-package br.avcaliani.hello_flink.infra.serializers;
+package br.avcaliani.lard_lad_exchange.infra.serializers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;

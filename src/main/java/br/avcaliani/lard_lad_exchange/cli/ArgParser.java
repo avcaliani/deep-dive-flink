@@ -1,4 +1,4 @@
-package br.avcaliani.hello_flink.cli;
+package br.avcaliani.lard_lad_exchange.cli;
 
 
 import org.apache.flink.configuration.Configuration;

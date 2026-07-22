@@ -13,7 +13,7 @@ java {
 }
 
 application {
-    mainClass.set("br.avcaliani.hello_flink.App")
+    mainClass.set("br.avcaliani.lard_lad_exchange.App")
 }
 
 repositories {

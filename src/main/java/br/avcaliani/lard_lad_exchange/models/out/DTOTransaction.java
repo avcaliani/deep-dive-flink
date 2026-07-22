@@ -1,8 +1,8 @@
-package br.avcaliani.hello_flink.models.out;
+package br.avcaliani.lard_lad_exchange.models.out;
 
-import br.avcaliani.hello_flink.infra.serializers.KafkaMessage;
-import br.avcaliani.hello_flink.models.in.Transaction;
-import br.avcaliani.hello_flink.models.in.User;
+import br.avcaliani.lard_lad_exchange.infra.serializers.KafkaMessage;
+import br.avcaliani.lard_lad_exchange.models.in.Transaction;
+import br.avcaliani.lard_lad_exchange.models.in.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
