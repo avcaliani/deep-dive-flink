@@ -1,4 +1,4 @@
-package br.avcaliani.hello_flink.infra;
+package br.avcaliani.lard_lad_exchange.infra;
 
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 

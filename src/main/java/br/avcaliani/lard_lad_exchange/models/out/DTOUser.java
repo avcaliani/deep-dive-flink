@@ -1,6 +1,6 @@
-package br.avcaliani.hello_flink.models.out;
+package br.avcaliani.lard_lad_exchange.models.out;
 
-import br.avcaliani.hello_flink.models.in.User;
+import br.avcaliani.lard_lad_exchange.models.in.User;
 import lombok.Data;
 
 @Data

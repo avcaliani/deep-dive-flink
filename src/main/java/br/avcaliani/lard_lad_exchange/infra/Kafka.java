@@ -1,8 +1,8 @@
-package br.avcaliani.hello_flink.infra;
+package br.avcaliani.lard_lad_exchange.infra;
 
-import br.avcaliani.hello_flink.infra.serializers.KafkaDeserializer;
-import br.avcaliani.hello_flink.infra.serializers.KafkaMessage;
-import br.avcaliani.hello_flink.infra.serializers.KafkaSerializer;
+import br.avcaliani.lard_lad_exchange.infra.serializers.KafkaDeserializer;
+import br.avcaliani.lard_lad_exchange.infra.serializers.KafkaMessage;
+import br.avcaliani.lard_lad_exchange.infra.serializers.KafkaSerializer;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.connector.sink2.Sink;
 import org.apache.flink.connector.base.DeliveryGuarantee;
@@ -79,7 +79,7 @@ public class Kafka extends Infra {
         if (delivery == EXACTLY_ONCE) {
             sinkBuilder
                     .setProperty("transaction.timeout.ms", "900000")
-                    .setTransactionalIdPrefix("flink-app--"); // Mandatory when using Exactly Once
+                    .setTransactionalIdPrefix("lard-lad-exchange--"); // Mandatory when using Exactly Once
         }
         return sinkBuilder.build();
     }

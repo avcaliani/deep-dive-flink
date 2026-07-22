@@ -1,6 +1,6 @@
-package br.avcaliani.hello_flink.models.in;
+package br.avcaliani.lard_lad_exchange.models.in;
 
-import br.avcaliani.hello_flink.infra.serializers.KafkaMessage;
+import br.avcaliani.lard_lad_exchange.infra.serializers.KafkaMessage;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
