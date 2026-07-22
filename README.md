@@ -5,6 +5,8 @@
 ![License](https://img.shields.io/github/license/avcaliani/deep-dive-flink?logo=apache&color=lightseagreen)
 ![Java](https://img.shields.io/badge/Java-17-FF7800?logo=openjdk&logoColor=white)
 ![Apache Flink](https://img.shields.io/badge/apache--flink-2.0.x-ff4757.svg)
+![Kafka](https://img.shields.io/badge/Kafka-231F20?logo=apachekafka&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
 My repository with [Apache Flink](https://flink.apache.org) learnings.
 
@@ -27,7 +29,11 @@ curl -o "data/raw/users/users.csv" \
 docker compose up -d
 ```
 
-> 💡 [Reference](https://nightlies.apache.org/flink/flink-docs-release-2.0/docs/try-flink/local_installation/)
+> 💡 [Fink Local Installation](https://nightlies.apache.org/flink/flink-docs-release-2.0/docs/try-flink/local_installation/)
+
+> [!TIP]
+> **Kafka UI** ➜ http://localhost:8080  
+> **Flink Dashboard** ➜ http://localhost:8081
 
 03 - Start **kafka producer** ([ref](https://github.com/avcaliani/kafka-in-docker/tree/main/scripts)) 👇
 
@@ -56,6 +62,7 @@ docker compose exec kafka-dev /opt/scripts/donu-transactions.sh
 ---
 config:
   theme: 'base'
+  look: 'handDrawn'
   themeVariables:
     primaryColor: '#f6f8fa'
     primaryTextColor: '#24292f'
