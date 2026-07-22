@@ -1,6 +1,6 @@
 <img src="https://flink.apache.org/img/logo/png/100/flink_squirrel_100_color.png" align="right" height="64px"/>
 
-# Lard Lad Exchange 🍩
+# Lard Lad Exchange
 
 ![License](https://img.shields.io/github/license/avcaliani/deep-dive-flink?logo=apache&color=lightseagreen)
 ![Java](https://img.shields.io/badge/Java-17-FF7800?logo=openjdk&logoColor=white)
@@ -14,7 +14,7 @@ The app name is "Lard Lad Donuts", inspired on Springfield's giant-donut landmar
 
 ## Quick Start
 
-01 - **Download** user mocked data.
+#### 01 - **Download** user mocked data
 
 ```bash
 mkdir -p ./data/raw/users
@@ -22,26 +22,27 @@ curl -o "data/raw/users/users.csv" \
   "https://raw.githubusercontent.com/avcaliani/kafka-in-docker/refs/heads/main/scripts/users.csv"
 ```
 
-02 - Start the containers 🐳
+#### 02 - Start the containers 🐳
+
+> 💡 [Fink Local Installation](https://nightlies.apache.org/flink/flink-docs-release-2.0/docs/try-flink/local_installation/)
 
 ```bash
 # 💡 To stop just type `docker compose down`
 docker compose up -d
 ```
 
-> 💡 [Fink Local Installation](https://nightlies.apache.org/flink/flink-docs-release-2.0/docs/try-flink/local_installation/)
-
 > [!TIP]
-> **Kafka UI** ➜ http://localhost:8080  
-> **Flink Dashboard** ➜ http://localhost:8081
+> To check the Kafka Topcis and Messages or Flink Application STDOUT, check the links bellow.  
+> - **Kafka UI** ➜ http://localhost:8080  
+> - **Flink Dashboard** ➜ http://localhost:8081
 
-03 - Start **kafka producer** ([ref](https://github.com/avcaliani/kafka-in-docker/tree/main/scripts)) 👇
+#### 03 - Start **kafka producer** ([ref](https://github.com/avcaliani/kafka-in-docker/tree/main/scripts)) 👇
 
 ```bash
 docker compose exec kafka-dev /opt/scripts/donu-transactions.sh
 ```
 
-04 - **Run** the application
+#### 04 - **Run** the application
 
 ```bash
 # Pipeline - Dummy
