@@ -8,10 +8,9 @@
 
 My repository with [Apache Flink](https://flink.apache.org) learnings.
 
-Lard Lad Donuts, Springfield's giant-donut landmark from *The Simpsons*.
-fitting, since this pipeline's whole job is moving (fictional) DonutCoin around.
+The app name is "Lard Lad Donuts", inspired on Springfield's giant-donut landmark from *The Simpsons*.
 
-### Quick Start
+## Quick Start
 
 01 - **Download** user mocked data.
 
@@ -51,7 +50,7 @@ docker compose exec kafka-dev /opt/scripts/donu-transactions.sh
       --kafka-brokers "kafka-dev:29092"
 ```
 
-#### Pipeline - Validate Transactions 
+## Pipeline - Validate Transactions
 
 ```mermaid
 ---
